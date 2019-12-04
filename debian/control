@@ -1,0 +1,9 @@
+Source: rpi-loadbalancer
+Maintainer: John Norwood <norwood.john.m@gmail.com>
+
+Package: rpi-loadbalancer
+Priority: extra
+Architecture: any
+Depends: nginx
+Description: raspberry pi load balancer instance
+ raspberry pi load balancer instance

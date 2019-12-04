@@ -1,0 +1,15 @@
+[Unit]
+Description=rpi-loadbalancer nginx service
+After=syslog.target network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=forking
+PIDFile=/var/run/rpi-loadbalancer-nginx.pid
+ExecStartPre=/usr/sbin/nginx -t -c /opt/rpi-loadbalancer/nginx.conf
+ExecStart=/usr/sbin/nginx -c /opt/rpi-loadbalancer/nginx.conf
+ExecReload=/usr/sbin/nginx -c /opt/rpi-loadbalancer/nginx.conf -s reload
+ExecStop=/bin/kill -s QUIT $MAINPID
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
