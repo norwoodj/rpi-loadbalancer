@@ -4,8 +4,8 @@ VERSION_PLACEHOLDER := _VERSION
 help:
 	@echo "Available Targets:"
 	@echo
-	@echo "  clean           - Clean up build artifacts"
-	@echo "  deb             - Build debian packages for deploying rpi-loadbalancer"
+	@echo "  debclean - Clean up build artifacts"
+	@echo "  deb      - Build debian packages for deploying rpi-loadbalancer"
 
 
 ##
