@@ -1,4 +1,4 @@
-/opt/rpi-loadbalancer/logs/nginx-*.log {
+/opt/rpi-loadbalancer/logs/*.log {
     daily
     rotate 7
     compress
