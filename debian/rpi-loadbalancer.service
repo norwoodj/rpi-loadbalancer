@@ -10,6 +10,7 @@ ExecStart=/usr/sbin/nginx -c /opt/rpi-loadbalancer/nginx.conf
 ExecReload=/usr/sbin/nginx -c /opt/rpi-loadbalancer/nginx.conf -s reload
 ExecStop=/bin/kill -s QUIT $MAINPID
 PrivateTmp=true
+User=loadbalancer
 
 [Install]
 WantedBy=multi-user.target

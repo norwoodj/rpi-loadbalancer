@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+adduser --system loadbalancer
+chown -R loadbalancer:nogroup /opt/rpi-loadbalancer/logs
